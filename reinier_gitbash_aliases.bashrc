@@ -372,29 +372,44 @@ alias gd="git diff"
 # Muestra las diferencias entre el estado actual 'staged' y el "commited" anterior
 alias gds="git diff --staged"
 
-# Realiza un reset de tipo soft:
+# Makes a soft reset:
 alias grs="git reset --soft"
 
-# Realiza un reset de tipo hard:
+# Makes a hard reset:
 alias grh="git reset --hard"
 
-# Adiciona ficheros en status 'modified' actuales hacia la etapa 'staged':
+# Adds a new remote:
+alias gra="git remote add"
+
+# Verifies the status of the remote repository:
+alias grv="git remote -v"
+
+# Adds a new remote with the name 'origin':
+alias grao="git remote add origin"
+
+# Adds current files on 'modified' status to the 'staged' status:
 alias ga="git add"
 
-# Adiciona todos los ficheros en status 'modified' actuales hacia la etapa 'staged':
+# Adds all the current files on 'modified' status to the 'staged' status:
 alias gaa="git add --all"
 
-# 
-alias gpus="git push"
+# Push the local repository:
+alias gpush="git push"
 
-# 
-alias gpusf="git push -f"
+#  Push the local repository:
+alias gpushu="git push -u"
 
-# 
-alias gpusfo="git push -f origin"
+#  Push the local repository:
+alias gpushf="git push -f"
 
-# 
-alias gpul="git pull"
+# Push the local repository to the remote location with the name 'origin':
+alias gpushuo="git push -u origin"
+
+# Push the local repository to the remote location with the name 'origin':
+alias gpushfo="git push -f origin"
+
+# Pulls the files to the local repository:
+alias gpull="git pull"
 
 # -----------------------------------------------------------------
 
