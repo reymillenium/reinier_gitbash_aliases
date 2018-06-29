@@ -405,7 +405,7 @@ alias gpushu="git push -u"
 #  Push the local repository:
 alias gpushf="git push -f"
 
-# Push the local repository to the remote location with the name 'origin':
+# Push the local repository to the remote location with the name 'origin' and sets this as default (untrack):
 alias gpushuo="git push -u origin"
 
 # Push the local repository to the remote location with the name 'origin':
