@@ -381,6 +381,9 @@ alias grh="git reset --hard"
 # Adds a new remote:
 alias gra="git remote add"
 
+# Deletes a remote:
+alias grr="git remote rm"
+
 # Verifies the status of the remote repository:
 alias grv="git remote -v"
 
