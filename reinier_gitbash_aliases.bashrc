@@ -384,6 +384,18 @@ alias ga="git add"
 # Adiciona todos los ficheros en status 'modified' actuales hacia la etapa 'staged':
 alias gaa="git add --all"
 
+# 
+alias gpus="git push"
+
+# 
+alias gpusf="git push -f"
+
+# 
+alias gpusfo="git push -f origin"
+
+# 
+alias gpul="git pull"
+
 # -----------------------------------------------------------------
 
 
