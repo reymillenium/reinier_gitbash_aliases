@@ -1,6 +1,6 @@
-# 
-# 
-# 
+
+
+
 # ************************************************************
 # *                                                          *
 # *    *** REINIER'S LARAVEL ALIASES FOR THE CONSOLE  ***    *
@@ -10,21 +10,20 @@
 # *        PHONE:     (786) 458-2150                         *
 # *                                                          *
 # ************************************************************
-# 
-# 
+
+# -----------------------------------------------------------------
+
+#  * BASICS REINIER'S LARAVEL ALIASES * 
+
 # Definimos algunos datos de contacto
-# 
+
 name='Reinier Garcia Ramos'
-version='20180629'
+version='20180705'
 email='reymillenium@gmail.com'
 movil='(786) 458-2150'
-# 
-# -----------------------------------------------------------------
-# 
-#  * BASICS REINIER LARAVEL ALIAS * 
 
 # Definición de los colores como variables:
-#
+
 black='\033[0;30m'
 red='\033[0;31m'
 green='\033[0;32m'
@@ -33,7 +32,7 @@ blue='\033[0;34m'
 purple='\033[0;35m'
 cyan='\033[0;36m'
 lightGray='\033[0;37m'
-#
+
 darkGray='\033[1;30m'
 lightRed='\033[1;31m'
 lightGreen='\033[1;32m'
@@ -44,10 +43,8 @@ lightCyan='\033[1;36m'
 white='\033[1;37m'
 nc='\033[0m' # No Color
 
-# Muestra un mensaje inicial, justo al abrir la terminal git-bash
-# 
-#printf "\n\n${red}*** REINIER\'S LARAVEL ALIASES FOR THE CONSOLE  *** \n\n$Copyright: ${orange}Reinier Garcia Ramos. \n{blue}Version:   ${orange}20180426\n${blue}${blue}Email:     ${orange}reymillenium@gmail.com\n${blue}Phone:     ${orange}(786) 458-2150\n"
-# 
+# Se muestra un mensaje inicial, justo al abrir la terminal git-bash
+
 printf "\n"
 printf "  ${yellow}************************************************************\n"
 printf "  ${yellow}*                                                          ${yellow}*\n"
@@ -60,12 +57,12 @@ printf "  ${yellow}*        ${blue}PHONE:     ${orange}${movil}                 
 printf "  ${yellow}*                                                          ${yellow}*\n"
 printf "  ${yellow}************************************************************\n"
 
-# Muestra la versión de tu reinier_laravel_alias de forma abreviada
-#
+# Se muestra la versión de reinier_laravel_aliases de forma abreviada:
+
 alias rei='printf "\n\n${red}*** REINIER LARAVEL ALIASES FOR THE CONSOLE  *** \n\n${blue}COPYRIGHT: ${orange}${name}. \n${blue}VERSION:   ${orange}${version}\n${blue}EMAIL:     ${orange}${email}\n${blue}PHONE:     ${orange}${movil}\n"'
 
-# Muestra la versión de tu reinier_laravel_alias de forma más extensa
-#
+# Se muestra la versión de reinier_laravel_alias de forma más extensa:
+
 reinier() {
     printf "\n"
     printf "  ${yellow}************************************************************\n"
@@ -80,8 +77,8 @@ reinier() {
     printf "  ${yellow}************************************************************\n"
 }
 
-# Reescribe la última versión del fichero "reinier_gitbash_aliases.bashrc" en el fichero de configuración de la terminal git-bash:
-# 
+# Se reescribe la última versión del fichero "reinier_gitbash_aliases.bashrc" en el fichero de configuración de la terminal git-bash:
+
 crga() {
     cp D:/Work/Projects/2018/reinier_gitbash_aliases/reinier_gitbash_aliases.bashrc c:/Users/Reinier/.bashrc
     source ~/.bashrc
@@ -134,25 +131,28 @@ alias pah='php artisan help'
 
 # -----------------------------------------------------------------
 
-#  * ACCESS TO MY PROJECTS (edite el nombre al final de la sentencia) * 
+#  * ACCESS TO MY PROJECTS (Agregue su nuevo acceso al final del listado) * 
 
-# Example 1: Accede al directorio de la raiz de proyectos de XAMPP, dentro de la carpeta "htdocs"
+# Acceso 1: Accede al directorio de la raiz de proyectos de XAMPP, dentro de la carpeta "htdocs"
 alias htdocs='cd c:/xampp/htdocs'
 
-# Example 2: Accede al directorio del proyecto "Blog", dentro de la carpeta "blog"
+# Acceso 2: Accede al directorio del proyecto "Blog", dentro de la carpeta "blog"
 alias blog='cd c:/xampp/htdocs/reymillenium_blog'
 
-# Example 3: Accede al directorio del proyecto "Cinema", dentro de la carpeta "reymillenium_cinema"
+# Acceso 3: Accede al directorio del proyecto "Cinema", dentro de la carpeta "reymillenium_cinema"
 alias cinema='cd c:/xampp/htdocs/reymillenium_cinema'
 
-# Example 4: Accede al directorio del proyecto "autec", dentro de la carpeta "reymillenium_autec"
+# Acceso 4: Accede al directorio del proyecto "autec", dentro de la carpeta "reymillenium_autec"
 alias autec='cd c:/xampp/htdocs/reymillenium_autec'
 
-# Example 5: Accede al directorio del curso de Git en Styde.net, dentro de la carpeta "Aprendizaje"
-alias gstyde='cd D:/Work/Aprendizaje/git/Styde'
+# Acceso 5: Accede al directorio del curso de Git en Styde.net, dentro de la carpeta "Aprendizaje"
+alias gitstyde='cd D:/Work/Aprendizaje/git/Styde'
 
-# Example 6: Accede al directorio del proyecto reinier_gitbash_aliases, dentro de la carpeta "Projects" del 2018
+# Acceso 6: Accede al directorio del proyecto reinier_gitbash_aliases, dentro de la carpeta "Projects" del 2018
 alias rga='cd D:/Work/Projects/2018/reinier_gitbash_aliases'
+
+# Acceso 7: Accede al directorio del proyecto "BuenasNuevas", dentro de la carpeta "rey_buenasnuevas"
+alias bn='cd c:/xampp/htdocs/rey_buenasnuevas'
 
 # -----------------------------------------------------------------
 
@@ -360,7 +360,10 @@ alias gs="git status"
 # Muestra el listado de todos los commits en mi repositorio:
 alias gl="git log"
 
-# Realiza un commit en mi repositorio:
+# Realiza un commit en mi repositorio sin mensaje:
+alias gc="git commit"
+
+# Realiza un commit en mi repositorio con un mensaje:
 alias gcm="git commit -m"
 
 # Arregla el commit anterior:
