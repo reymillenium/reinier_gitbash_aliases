@@ -18,7 +18,7 @@
 # Definimos algunos datos de contacto
 
 name='Reinier Garcia Ramos'
-version='20180705'
+version='20181216'
 email='reymillenium@gmail.com'
 movil='(786) 458-2150'
 
@@ -349,75 +349,169 @@ alias pam:pro='php artisan make:provider'
 
 # -----------------------------------------------------------------
 
-# * BASICS GIT * 
 
-# Inicia un repositorio:
+
+
+
+# 
+#-----------------------------------------------------------------------------
+# *** BASICS GIT COMMANDS *** 
+#-----------------------------------------------------------------------------
+# 
+# 
+#-----------------------------------------------------------------------------
+# Initiates a repository:
 alias gi="git init"
 
-# Muestra el estado actual de mi repositorio:
+#-----------------------------------------------------------------------------
+# Identifies me on a local Git repository (globally):
+# git config --global user.email "reymillenium@gmail.com"
+# git config --global user.name "Reinier Garcia Ramos"
+
+alias gcgue="git config --global user.email 'reymillenium@gmail.com'"
+alias gcgun="git config --global user.name 'Reinier Garcia Ramos'"
+
+#-----------------------------------------------------------------------------
+# Shows the current state of the repository:
 alias gs="git status"
 
-# Muestra el listado de todos los commits en mi repositorio:
+#-----------------------------------------------------------------------------
+# Shows a list with all the commits in the repository:
 alias gl="git log"
 
-# Realiza un commit en mi repositorio sin mensaje:
-alias gc="git commit"
+#-----------------------------------------------------------------------------
+# Makes a commit in the repository without message:
+# git commit
 
-# Realiza un commit en mi repositorio con un mensaje:
+#-----------------------------------------------------------------------------
+# Makes a commit in the repository wit a message:
 alias gcm="git commit -m"
 
-# Arregla el commit anterior:
+#-----------------------------------------------------------------------------
+# Amends the previous commit:
 alias gcam="git commit amend -m"
 
-# Muestra las diferencias entre el estado actual'modified' y el "staged" anterior
+#-----------------------------------------------------------------------------
+# Shows the differences between the curent state 'modified' and the previous 'staged':
 alias gd="git diff"
 
-# Muestra las diferencias entre el estado actual 'staged' y el "commited" anterior
+#-----------------------------------------------------------------------------
+# Shows tghe differences between the curent state 'staged' and the previous "commited":
 alias gds="git diff --staged"
 
+#-----------------------------------------------------------------------------
 # Makes a soft reset:
 alias grs="git reset --soft"
 
+#-----------------------------------------------------------------------------
 # Makes a hard reset:
 alias grh="git reset --hard"
 
+#-----------------------------------------------------------------------------
 # Adds a new remote:
 alias gra="git remote add"
 
+#-----------------------------------------------------------------------------
 # Deletes a remote:
 alias grr="git remote rm"
 
+#-----------------------------------------------------------------------------
 # Verifies the status of the remote repository:
 alias grv="git remote -v"
 
+#-----------------------------------------------------------------------------
 # Adds a new remote with the name 'origin':
 alias grao="git remote add origin"
 
+#-----------------------------------------------------------------------------
 # Adds current files on 'modified' status to the 'staged' status:
 alias ga="git add"
 
+#-----------------------------------------------------------------------------
 # Adds all the current files on 'modified' status to the 'staged' status:
 alias gaa="git add --all"
 
+#-----------------------------------------------------------------------------
 # Push the local repository:
 alias gpush="git push"
 
+#-----------------------------------------------------------------------------
 #  Push the local repository:
 alias gpushu="git push -u"
 
+#-----------------------------------------------------------------------------
 #  Push the local repository:
 alias gpushf="git push -f"
 
+#-----------------------------------------------------------------------------
 # Push the local repository to the remote location with the name 'origin' and sets this as default (untrack):
 alias gpushuo="git push -u origin"
 
+#-----------------------------------------------------------------------------
 # Push the local repository to the remote location with the name 'origin':
 alias gpushfo="git push -f origin"
 
+#-----------------------------------------------------------------------------
 # Pulls the files to the local repository:
 alias gpull="git pull"
 
-# -----------------------------------------------------------------
+#-----------------------------------------------------------------------------
+# Creates a new branch:
+# git branch <branch_name>
+
+# Example: 
+# git branch dev
+
+alias gb="git branch"
+
+# -----------------------------------------------------------------------------
+# Shows a list with the existing branches:
+# git branch
+
+# -----------------------------------------------------------------------------
+# Changes to another branch:
+# git checkout <branch_name>
+
+# Example: 
+# git checkout dev
+
+alias gc="git checkout"
+
+# -----------------------------------------------------------------------------
+# Does a merge from another branch into the present one:
+# git merge --no-ff <the_other_branch_name>
+
+#Example (switching to the branch master, and then from the branch master...):
+# git merge --no-ff dev
+
+alias gmnf="git merge --no-ff"
+
+# -----------------------------------------------------------------------------
+
+
+
+
+
+# -----------------------------------------------------------------------------
+
+
+
+
+
+# -----------------------------------------------------------------------------
+
+
+
+
+
+# -----------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
